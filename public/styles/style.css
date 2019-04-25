@@ -1,6 +1,7 @@
 header {
   text-align: center;
   border-bottom: 1px solid gray;
+  margin: 0 50px;
 }
 
 header blockquote {
@@ -22,6 +23,7 @@ a:hover {
   margin: 25px auto 150px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 main {
@@ -35,20 +37,51 @@ aside {
   border-left: 1px solid gray;
 }
 
-section.spotlight h4 {
-  text-align: center;
+ul {
+  list-style-type: circle;
 }
 
-section.spotlight {
-  /* margin-top: 75px;
-  margin-bottom: 125px; */
+li {
+  margin: 10px;
+}
+
+@media (max-width: 800px){
+  .content {
+    width: 100%;
+  }
+
+  header {
+    margin: 0;
+  }
+
+  header h1 {
+    font-size: 54pt;
+  }
+
+  main, aside {
+    width: 100%;
+  }
+
+  aside {
+    border-left: 0;
+    border-top: 1px solid gray;
+    text-align: center;
+    margin: 50px;
+  }
+
+  ul {
+    padding: 0;
+    list-style-type: none;
+  }
+}
+
+section.spotlight h4 {
+  text-align: center;
 }
 
 .spotlight-item {
   margin-left: 75px;
 }
-
-
 
 footer {
   text-align: center;
