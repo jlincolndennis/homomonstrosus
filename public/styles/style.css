@@ -4,6 +4,10 @@ header {
   margin: 0 50px;
 }
 
+header h1 {
+  color: #F17105;
+}
+
 header blockquote {
   margin-top: 0;
 }
